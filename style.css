@@ -1,0 +1,142 @@
+/* You can add custom CSS and extend Boostrap styles in this file. Remember, Bootstrap is just CSS at the end of the day! */
+
+/*debugging*/
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
+body {
+  position: relative;
+  box-sizing: border-box;
+}
+
+section#hero-section {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url("img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /*parallax effect*/
+  width: 100%;
+  min-height: 100vh;
+}
+
+.hero-content {
+  padding-top: 25vh;
+  color: white;
+  text-align: center;
+}
+
+#hero-section h1 {
+  text-shadow: 1px 1px 5px black;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+#hero-section h4 {
+  position: relative;
+  top: 10px;
+}
+
+.headshot {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  width: clamp(170px, 25vw, 250px);
+  border: 7px solid pink;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.scroll-top .navbar {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+
+.navbar {
+  box-shadow: 3px 3px 10px black;
+}
+
+.nav-link {
+  color: white;
+}
+
+.home-icon {
+  width: 2.2em;
+}
+
+#mission-target, #skills-target, #contact-target, #projects-target {
+  position: relative;
+  top: -100px;
+}
+
+.mission-pic { /*treat it like a background image*/
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.skill-icon {
+  font-size: 120px;
+  line-height: 1.3em;
+}
+
+.contact-icon {
+  font-size: 80px;
+  color: #1f5aa8;
+}
+
+.contact-icon:hover {
+  color: #003a70;
+}
+
+section#projects-section{
+  background-color: #fffdf5;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.carousel-item:after {
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.3);
+}
+
+.carousel-caption {
+  z-index: 1;
+}
+
+section#mission-section {
+  background-color: #f0c7d4;
+}
+
+section#skills-section {
+  background-color: #CC5A71;
+  color: white;
+}
+
+section#projects-section{
+  background-color: #f2c8a6;
+}
+
+section#contact-section {
+  background-color: #9cc8f2;
+}
+section#footer-section {
+  background-color: #964a7a;
+  color: white;
+}

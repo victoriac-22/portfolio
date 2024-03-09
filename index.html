@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">  
+    <meta name="milestone" content="Portfolio">
+    <!-- DONE: Replace this with your title -->
+    <title>Victoria Cheng's Portfolio</title>  
+    <!-- 
+			DONE: Add Bootstrap CSS link tag from: 
+      https://getbootstrap.com/docs/5.2/getting-started/introduction/
+		-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- 
+			DONE: Add Bootstrap Icons link tag from: 
+			https://icons.getbootstrap.com/
+			(Remember, the CDN link is towards the bottom of the page!)
+		-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Dev Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600,700" rel="stylesheet" type="test/css" />
+    <!-- Custom styles (these can extend the default Bootstrap styles) -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <!-- DONE: Paste Navbar code and customize links -->  
+  <body class="scroll-top"
+        data-bs-spy="scroll"
+        data-bs-target=".navbar"
+        data-bs-offset="100"> 
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark" style="background-color: #964a7a;"> <!--bg-dark #114B5F-->
+      <div class="container">
+        <a href="#hero-section" class="navbar-brand">
+          <img src="img/home_icon.png" class="home-icon" alt="home icon">
+        </a>
+
+        <button class="navbar-toggler" 
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-collapse">
+          <span class="navbar-toggler-icon"></span> 
+        </button>
+        
+        <div id="nav-collapse" class="collapse navbar-collapse">
+          <div class="navbar-nav ms-auto">
+            <a href="#mission-target" class="nav-link">Meet Me</a>
+            <a href="#skills-target" class="nav-link">Skills</a>
+            <a href="#projects-target" class="nav-link">Projects</a>
+            <a href="#contact-target" class="nav-link">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Hero section -->
+  	<section id="hero-section">
+      <div class="hero-content">
+        <img src="img/square_profile.jpg" class="headshot" alt="Victoria's headshot">
+        <h1>Victoria Cheng</h1>
+        <h4><em>lifelong learner</em></h4>
+      </div>
+  	</section> 
+    
+  	<!-- Mission/Meet-me section -->
+    <section id="mission-section">
+      <div id="mission-target"></div>
+      <div class="container py-5">
+        <h2 class="col-12 pb-5 text-center">Meet Me</h2>
+        <div class="row g-4">
+          <!--take up 6 columns, 50% of page, for medium screens and above-->
+          <div class="col-12 col-md-6 text-center"> 
+            <img src="img/mission.jpg" class="mission-pic" alt="An image of Earth from space.">
+          </div>
+          <!--take up 6 columns, 50% of page, for medium screens and above-->
+          <div class="col-12 col-md-6 d-flex align-items-center"> 
+            <p>Hi! My name is Victoria Cheng, and I'm a rising sophomore at Georgetown University pursuing a B.S. degree in computer science. I'm interested in leveraging technology to address complex problems and enrich the lives of others. I'm eager to apply my skills in languages like C++, Java, and Python to develop innovative and impactful solutions. Having lived and studied abroad and in the United States, I bring empathy, collaborative skills, and a unique global perspective to any role I undertake. Join me on my coding journey!</p>
+          </div>
+        </div>
+      </div>
+  	</section>
+    
+    <!-- Skills section -->
+    <section id="skills-section">
+      <div id="skills-target"></div>
+      <div class="container text-center py-5">
+        <h2 class="col-12 pb-4">Skills</h2>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-3 skill-item"> 
+            <i class="devicon-html5-plain skill-icon"></i>
+            <h3>HTML</h3>
+            <p>Structuring the web's content using modern semantic HTML.</p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 skill-item">
+            <i class="devicon-css3-plain skill-icon"></i>
+            <h3>CSS</h3>
+            <p>Presenting beautiful web designs and interactions using modern CSS.</p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 skill-item">
+            <i class="devicon-bootstrap-plain skill-icon"></i>
+            <h3>Bootstrap</h3>
+            <p>Rapidly developing responsive websites using the web's most popular framework.</p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 skill-item">
+            <i class="devicon-cplusplus-plain skill-icon"></i>
+            <h3>C++</h3>
+            <p>Creating and maintaining software with objected-oriented programming.</p>
+          </div>
+        </div>
+      </div>  
+  	</section>
+
+    <!--Projects Section-->
+    <section id="projects-section">
+      <div id="projects-target"></div>
+      <div class="container text-center py-5">
+        <h2 class="pb-4">Projects</h2>
+        <div id="my-carousel" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#my-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#my-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#my-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/washington.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h3>Landing Page (DNC)</h3>
+                <p>As a software engineering intern for the Democratic National Committee's Tech Team, I'm currently building a landing page for Portal, a toolhub used by data professionals across the U.S. [HTML/CSS, Bootstrap, Django, JavaScript] </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/calendar.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h3>Calendar Sync (Georgetown)</h3>
+                <p>Built software that synchronized events of a calendar between a device and a cloud server, such as between a simulated iPhone and iCloud account. [C++]</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/app.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h3>Vusic (Georgetown Disruptive Tech)</h3>
+                <p>Collaborated with Special Projects team members to program an app structure for Vusic, a music-based social media startup. [React Native, Expo] </p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#my-carousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#my-carousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section">
+      <div id="contact-target"></div>
+      <div class="container text-center py-5">
+        <h2 class="col-12 pb-3">Contact</h2>
+        <div class="row pb-3">
+          <div class="col-12 col-md-4">
+            <a class="contact-icon" href="https://www.linkedin.com/in/victoria-c-688132235/">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+          
+          <div class="col-12 col-md-4">
+            <a class="contact-icon" href="https://www.github.com">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+          
+          <div class="col-12 col-md-4">
+            <a class="contact-icon" href="mailto: vec20@georgetown.edu">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Footer section -->
+    <section id="footer-section"> 
+      <div class="container py-3 d-flex align-items-center justify-content-center">
+        <p>&copy; Victoria Cheng 2023</p>
+      </div>
+    </section>
+  
+    <!-- 
+  		DONE: Paste Bootstrap JavaScript script tag from:
+  		https://getbootstrap.com/docs/5.2/getting-started/introduction/
+  	-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
